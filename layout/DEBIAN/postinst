@@ -1,0 +1,25 @@
+#!/bin/sh
+
+file="/var/mobile/Library/Preferences/net.tateu.callansweractivate.plist"
+
+if [ ! -f ${file} ]; then
+    echo '<?xml version="1.0" encoding="UTF-8"?>' > ${file}
+    echo '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">' >> ${file}
+    echo '<plist version="1.0">' >> ${file}
+    echo '<dict>' >> ${file}
+    echo '	<key>numbers</key>' >> ${file}
+    echo '	<array>' >> ${file}
+    echo '		<dict>' >> ${file}
+    echo '			<key>enabled</key>' >> ${file}
+    echo '			<true/>' >> ${file}
+    echo '			<key>answerDelay</key>' >> ${file}
+    echo '			<real>0.0</real>' >> ${file}
+    echo '			<key>eventDelay</key>' >> ${file}
+    echo '			<real>0.0</real>' >> ${file}
+    echo '			<key>number</key>' >> ${file}
+    echo '			<string>aaaaaaaaaa</string>' >> ${file}
+    echo '		</dict>' >> ${file}
+    echo '	</array>' >> ${file}
+    echo '</dict>' >> ${file}
+    echo '</plist>' >> ${file}
+fi

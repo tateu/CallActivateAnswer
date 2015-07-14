@@ -1,0 +1,10 @@
+Package: net.tateu.callansweractivate
+Name: Call Answer Activate
+Depends: firmware (>=8.0), mobilesubstrate, libactivator
+Version: 1.0.0~beta1
+Architecture: iphoneos-arm
+Description: Activator Event to auto answer a phone call from specific numbers with user selectable delay
+Maintainer: tateu (Josh Harris) <tateu@tateu.net>
+Author: tateu (Josh Harris) <tateu@tateu.net>
+Section: Tweaks
+
